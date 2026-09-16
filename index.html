@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Webpage</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f4f7fb;
+      font-family: Arial, sans-serif;
+    }
+
+    .highlight {
+      background: #fff2a8;
+      padding: 0.25em;
+    }
+
+    #main-heading {
+      color: #174a7e;
+      border-bottom: 2px solid #174a7e;
+    }
+
+    .static-box { position: static; }
+    .relative-box { position: relative; left: 8px; }
+    .absolute-box { position: absolute; right: 1rem; top: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 id="main-heading">My First Webpage</h1>
+    <p class="highlight" style="color: #8a2d2d;">Welcome to my simple webpage.</p>
+  </div>
+
+  <div class="main">
+    <h2>About Me</h2>
+    <p class="static-box">My name is Zhanserik. I am an IT student learning how to build clear and useful webpages.</p>
+
+    <h3>My Interests</h3>
+    <ol>
+      <li>Web development</li>
+      <li>Programming</li>
+      <li>Reading</li>
+    </ol>
+
+    <h3>Useful Resources</h3>
+    <ul>
+      <li><a href="https://www.youtube.com/">youtube</a></li>
+      <li><a href="https://www.w3.org/">W3C</a></li>
+    </ul>
+
+    <img class="float-image" src="https://picsum.photos/160/100" alt="A randomly selected landscape">
+    <p class="relative-box">This paragraph uses relative positioning beside a floated image.</p>
+    <div class="clear-layout">This text clears the floated image.</div>
+
+    <div class="position-area">
+      <p class="absolute-box">Absolute note</p>
+      <p>Positioning practice area.</p>
+    </div>
+
+    <p class="emojis">Learning is fun: ðŸ“š ðŸ’» â­</p>
+
+    <table>
+      <caption>Study Schedule</caption>
+      <tr>
+        <th>Subject</th>
+        <th>Day</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Monday</td>
+        <td>10:00</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Wednesday</td>
+        <td>14:00</td>
+      </tr>
+    </table>
+
+    <form>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="color">Favorite color</label>
+      <input id="color" name="color" type="color" value="#174a7e">
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <button type="button">Click Me</button>
+  </div>
+
+  <div class="footer">
+    <p>Created for my first web development assignment.</p>
+  </div>
+</body>
+</html>
